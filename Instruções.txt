@@ -1,0 +1,48 @@
+Configurações de Servidor :
+-> .env
+
+Configurações de IP endpoint : 
+/resources/js/pages/ -> monitoramento.js -> http://200.9.154.225:5050/produto2
+/resources/js/pages/ -> monitoramento.js -> http://200.9.154.225:5050/produto2
+/resources/js/pages/ -> drop.js -> http://200.9.154.225:5050/produto2 | http://127.0.0.1/nike/receber.php
+/resources/js/pages/ -> drop_pro.js -> http://200.9.154.225:5050/produto2 | http://127.0.0.1/nike/receber.php
+
+######################
+endpoint = /api/registrar-compra
+
+{
+"email": "cliente@example.com",
+"link_imagem": "https://exemplo.com/imagem-produto.jpg",
+"sku": "09750255N375",
+"tamanho": "42",
+"nome_produto": "Air Jordan 1 Low OG"
+}
+
+#####################
+Endpoint = /api/criar-conta
+Se ja existir altera a senha.
+
+{
+"email": "romanosroxx@gmail.com",
+"senha": "Felipe123456!"
+}
+
+#####################
+Endpoint: /api/contas-cartoes
+
+{
+  "sku": "gfdgdsfgsd32423"
+}
+
+
+
+
+• mudar botao de add ✅
+• token na request de enviar forms ✅
+• destaque no PRO ✅
+• forms pro e normal enviar para mim o e-mail nike (pegar do json junto com os tokens) ✅
+• se puder enviar o tamanho junto com o forms tb tamanho e SKU ✅
+• está dando para enviar forms sem buscar produto ✅
+• bloquear monitorar duas vezes o mesmo produto ✅
+• bloquear zoom no celular✅
+

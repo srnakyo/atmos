@@ -1,0 +1,34 @@
+<header class="header fixed top-0 z-10 left-0 right-0 flex items-stretch shrink-0 bg-[#fefefe] dark:bg-coal-500"
+data-sticky="true" data-sticky-class="shadow-sm dark:border-b dark:border-b-coal-100" data-sticky-name="header"
+id="header">
+<!-- begin: container -->
+<div class="container-fixed flex justify-between items-stretch lg:gap-4" id="header_container">
+	<div class="flex gap-1 lg:hidden items-center -ml-1">
+		<a class="shrink-0" href="{{ route('contas') }}">
+			<img class="max-h-[25px] w-full" src="assets/media/app/mini-logo.png" />
+		</a>
+		<div class="flex items-center">
+			<button class="btn btn-icon btn-light btn-clear btn-sm" data-drawer-toggle="#sidebar">
+				<i class="ki-filled ki-menu">
+				</i>
+			</button>
+		
+		</div>
+	</div>
+	<div class="flex items-stretch" id="megamenu_container">
+		<div class="flex items-stretch" data-reparent="true" data-reparent-mode="prepend|lg:prepend"
+		data-reparent-target="body|lg:#megamenu_container">
+		<div class="hidden lg:flex lg:items-stretch" data-drawer="true"
+		data-drawer-class="drawer drawer-start fixed z-10 top-0 bottom-0 w-full mr-5 max-w-[250px] p-5 lg:p-0 overflow-auto"
+		data-drawer-enable="true|lg:false" id="megamenu_wrapper">
+		<div class="menu flex-col lg:flex-row gap-5 lg:gap-7.5" data-menu="true" id="megamenu">
+			
+			
+		</div>
+	</div>
+</div>
+</div>
+
+</div>
+<!-- end: container -->
+</header>
