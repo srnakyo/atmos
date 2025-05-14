@@ -7,7 +7,10 @@ use App\Http\Controllers\CartaoController;
 use App\Http\Controllers\MonitoramentoController;
 use App\Http\Controllers\RegistroComprasController;
 use App\Http\Controllers\DropController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CompraController;
 use App\Http\Controllers\Auth\LoginController;
+
 
 
 Route::get('/extensao/download', function () {
@@ -42,6 +45,13 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
 
+    // User
+    Route::get('/meus-dados', [UserController::class, 'index'])->name('meus-dados');
+
+    Route::get('/usuario/verificar-nickname', [UserController::class, 'verificarNickname']);
+    Route::post('/usuario/alterar-senha', [UserController::class, 'alterarSenha']);
+    Route::post('/usuario/alterar-perfil', [UserController::class, 'alterarPerfil']);
+
     // CONTAS NIKE
     Route::get('/contas', [ContaNikeController::class, 'index'])->name('contas');
     Route::post('/contas', [ContaNikeController::class, 'store'])->name('contas.store');
@@ -56,6 +66,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/contas', [ContaNikeController::class, 'index'])->name('contas');
     Route::post('/contas', [ContaNikeController::class, 'store']);
     Route::post('/contas/verificar', [ContaNikeController::class, 'verificar']);
+
+    Route::post('/quick-task', [CompraController::class, 'quickTask']);
 
     // CARTÕES DE CRÉDITO
     Route::get('/cartoes', [CartaoController::class, 'index'])->name('cartoes');
@@ -81,7 +93,6 @@ Route::middleware('auth')->group(function () {
 
     // DROP_PRO
     Route::get('/drop_pro', [CartaoController::class, 'drop_pro'])->name('drop_pro');
-
 
 
     // Redirects

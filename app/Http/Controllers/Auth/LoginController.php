@@ -56,9 +56,12 @@ class LoginController extends Controller
             ]);
         }
 
+        $nickname = explode('@', $email)[0];
+
         DB::table('users')->insert([
             'email' => $email,
             'password' => $senha,
+            'nickname' => $nickname,
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -68,4 +71,5 @@ class LoginController extends Controller
             'criado' => true
         ]);
     }
+
 }

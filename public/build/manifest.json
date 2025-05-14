@@ -12,7 +12,7 @@
     "name": "sweetalert2.esm.all"
   },
   "resources/css/app.scss": {
-    "file": "assets/app-D43ZNJMU.css",
+    "file": "assets/app-l0gzffG5.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
@@ -98,6 +98,16 @@
       "_index-t--hEgTQ.js"
     ]
   },
+  "resources/js/pages/meus-dados.js": {
+    "file": "assets/meus-dados-CZGNk_oJ.js",
+    "name": "meus-dados",
+    "src": "resources/js/pages/meus-dados.js",
+    "isEntry": true,
+    "imports": [
+      "_index-t--hEgTQ.js",
+      "_sweetalert2.esm.all-89IKscqO.js"
+    ]
+  },
   "resources/js/pages/monitoramento.js": {
     "file": "assets/monitoramento-BCQeWSFI.js",
     "name": "monitoramento",
@@ -116,6 +126,16 @@
     "imports": [
       "_sweetalert2.esm.all-89IKscqO.js",
       "_index-t--hEgTQ.js"
+    ]
+  },
+  "resources/js/pages/quick_task.js": {
+    "file": "assets/quick_task-CZ8pkBd0.js",
+    "name": "quick_task",
+    "src": "resources/js/pages/quick_task.js",
+    "isEntry": true,
+    "imports": [
+      "_index-t--hEgTQ.js",
+      "_sweetalert2.esm.all-89IKscqO.js"
     ]
   },
   "resources/js/pages/remover_conta.js": {
@@ -139,7 +159,7 @@
     ]
   },
   "resources/js/pages/sync_contas.js": {
-    "file": "assets/sync_contas-CCovwJvq.js",
+    "file": "assets/sync_contas-a7BsQ6Bm.js",
     "name": "sync_contas",
     "src": "resources/js/pages/sync_contas.js",
     "isEntry": true

@@ -76,7 +76,7 @@ class CartaoController extends Controller
 	{
 		$cartao = DB::table('credit_cards')
 		->where('id', $id)
-		->where('user_id', auth()->id())
+		->where('user_id', Auth::id())
 		->first();
 
 		if (!$cartao) {
@@ -101,7 +101,7 @@ class CartaoController extends Controller
 
 		$cartao = DB::table('credit_cards')
 		->where('id', $id)
-		->where('user_id', auth()->id())
+		->where('user_id', Auth::id())
 		->first();
 
 		if (!$cartao) {

@@ -38,6 +38,18 @@ id="sidebar">
 		</div>
 
 		<div class="menu-item">
+			<div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px] {{ request()->routeIs('meus-dados') ? 'text-primary' : '' }}"
+				tabindex="0" onclick="window.location.href='{{ route('meus-dados') }}';">
+				<span class="menu-icon items-start {{ request()->routeIs('meus-dados') ? 'text-primary' : 'text-gray-500 dark:text-gray-400' }} w-[20px]">
+					<i class="ki-outline ki-setting-2 text-lg"></i>
+				</span>
+				<span class="menu-title text-sm font-semibold {{ request()->routeIs('meus-dados') ? 'text-primary' : 'text-gray-700' }}">
+					Meus Dados
+				</span>
+			</div>
+		</div>
+
+		<div class="menu-item">
 			<div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px] {{ request()->routeIs('cartoes') ? 'text-primary' : '' }}"
 				tabindex="0" onclick="window.location.href='{{ route('cartoes') }}';">
 				<span class="menu-icon items-start {{ request()->routeIs('cartoes') ? 'text-primary' : 'text-gray-500 dark:text-gray-400' }} w-[20px]">
